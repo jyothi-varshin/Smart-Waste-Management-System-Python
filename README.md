@@ -60,7 +60,7 @@ It provides a command-line interface for different types of users (Admin, Staff,
 
    * Admin: `admin / admin123`
    * Staff: `staff1 / staff1123`
-
+   * Staff: `staff2 / staff2123`
 
 ---
 
