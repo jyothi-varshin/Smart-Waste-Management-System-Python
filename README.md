@@ -1,83 +1,103 @@
-# Smart Waste Management System 🚮
+# Smart Waste Management System
 
-This is a Python-based project that helps manage waste collection in a city. It provides an easy-to-use terminal interface for Admins, Staff, and Users to handle tasks like:
+## Project Overview
 
-- Managing city areas
-- Adding and assigning vehicles
-- Filing and resolving complaints
-- Scheduling waste pickups
-- Tracking recycling units
-- Viewing reports with graphs 📊
+This is a Python-based application designed to manage waste collection operations within a city.
+It provides a command-line interface for different types of users (Admin, Staff, and User) to perform tasks such as managing areas, handling complaints, scheduling pickups, and generating reports.
 
 ---
 
-## 👥 Who Can Use It?
+## User Roles
 
-- **Admin**: Has full control (manage areas, vehicles, complaints, schedules, etc.)
-- **Staff**: Can resolve complaints, track recycling units, and schedule pickups
-- **User**: Can file complaints only
+* **Admin**
+  Full access to manage areas, vehicles, complaints, schedules, and reports
 
----
+* **Staff**
+  Can resolve complaints, manage recycling units, and schedule waste pickups
 
-## 🚀 Features
-
-- Add and update city areas
-- Add vehicles and assign them for pickups
-- File and resolve complaints with notes
-- Schedule waste pickups with retry options
-- Track recycling units and their status
-- View useful reports with simple graphs
+* **User**
+  Can file complaints related to waste management
 
 ---
 
-## 🏁 How to Run
+## Features
 
-1. Make sure you have **Python** installed
-2. Clone or download the project
-3. Run the program:
+* Manage city areas (add, update, delete, view)
+* Add and manage vehicles for waste collection
+* File and resolve complaints with status tracking
+* Schedule waste pickups with validation and retry handling
+* Track recycling units and their operational status
+* Generate reports and visualize data using graphs
+
+---
+
+## How to Run
+
+1. Make sure Python is installed on your system
+
+2. Install required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Clone the repository:
+
+   ```bash
+   git clone <repo-url>
+   ```
+
+4. Navigate to the project directory
+
+5. Run the application:
+
+   ```bash
+   python main.py
+   ```
+
+6. Login credentials:
+
+   * Admin: `admin / admin123`
+   * Staff: `staff1 / staff123`
+
+---
+
+## Project Structure
 
 ```bash
-python main.py
-```
-
-4. Login as:
-   - **Admin**: `admin / admin123`
-   - **Staff**: `staff1 / staff123`
-
----
-
-## 📁 Project Structure
-
-```bash
-WasteManagement/
+smart-waste-management/
 │
-├── data/               # All CSV files stored here
-├── main.py             # Main entry point
-├── area_management.py  # Area-related code
-├── vehicle.py          # Vehicle handling
-├── waste_pickup.py     # Scheduling pickups
-├── complaints.py       # Complaint system
-├── recycling.py        # Recycling unit tracker
-└── reports.py          # Graph reports
+├── data/                   # CSV files for storing data
+├── main.py                 # Entry point of the application
+├── admin_part.py           # User authentication and roles
+├── Area_Management.py      # Area management module
+├── vehiclemanagement.py    # Vehicle management module
+├── waste_pickup.py         # Waste pickup scheduling
+├── new_complaint.py        # Complaint filing system
+├── resolve_complaint.py    # Complaint resolution system
+├── recyclingmanagement.py  # Recycling unit tracking
+├── reports.py              # Reports and visualizations
 ```
 
 ---
 
-## 🧠 Notes
+## Notes
 
-- All data is stored in `.csv` files inside the `data/` folder
-- Designed to run in the terminal — very beginner-friendly
-- Easy to extend or modify!
-
----
-
-## 🛠 Built With
-
-- Python
-- pandas
-- matplotlib
+* All data is stored locally in CSV files inside the `data/` folder
+* The application runs entirely in the terminal
+* The project is modular and can be extended with additional features
 
 ---
 
-## 📌 License
-Free to use and modify 😄
+## Technologies Used
+
+* Python
+* pandas
+* matplotlib
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this project with proper attribution.
