@@ -55,10 +55,12 @@ It provides a command-line interface for different types of users (Admin, Staff,
    python main.py
    ```
 
-6. Login credentials:
+6. Login credentials format:
+   Use the format **username / password**
 
    * Admin: `admin / admin123`
-   * Staff: `staff1 / staff123`
+   * Staff: `staff1 / staff1123`
+
 
 ---
 
